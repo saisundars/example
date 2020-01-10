@@ -1,0 +1,16 @@
+<p>stractural works!</p>
+<div *ngIf="showElement">showing this content NGIF</div>
+<ul>
+    <li *ngFor="let person of people let i=index"> 
+     {{i+1}} - {{ person.name }}
+    </li>
+   </ul>
+   
+ <div [ngSwitch]= "Course">
+    <p *ngSwitchCase="java">java</p>
+    <p *ngSwitchCase="Angular">angular</p>
+    <p *ngSwitchDefault>invald course</p>
+
+
+</div> 
+
